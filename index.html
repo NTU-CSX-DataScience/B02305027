@@ -20,6 +20,47 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <style>
+      #btn-space-left {
+        margin-right: 5px;
+      }
+      #btn-space-right {
+        margin-left: 5px;
+      }
+      body, h3 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif
+      }
+
+      /* For gear animate*/
+      .gear {
+          -webkit-animation: gear-spin 3s infinite linear;
+          animation: gear-spin 3s infinite linear;
+      }
+      .gear.small {
+          width: 36px;
+          margin-left: 10px;
+      }
+      @-webkit-keyframes gear-spin {
+          0% {
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+          }
+          100% {
+              -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+          }
+      }
+      @keyframes gear-spin {
+          0% {
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+          }
+          100% {
+              -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+          }
+      }      
+    </style>
   </head>
 
 
@@ -53,9 +94,7 @@
                   <li><a href="#student10">謝承軒</a></li>
                   <li><a href="#student04">何佳儀</a></li>
                   <li><a href="#student13">翁嬿婷</a></li>
-                  <li><a href="#student09">洪浩博</a></li>
-                  
-              
+                  <li><a href="#student09">洪浩博</a></li>                 
                 </ul>
               </li>
 
@@ -100,16 +139,25 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/final.png" height="400" width="1200">
                   </div>
-                  <h3 class="content-box-title font-serif">Final Project</h3>
-                </a>
+                  <h3 class="content-box-title">Final Project</h3>
+                </a>           
               </div>
-              
+
+              <!-- Add slide & project buttons -->
+              <div class="col-md-12 col-sm-6 col-xs-12 row-md-12 text-center">
+                <a class="btn btn-danger col-6" id="btn-space-left" target="_blank" 
+                  href="#">Slide Link</a>
+                <a class="btn btn-danger col-6" id="btn-space-right" target="_blank" 
+                  href="#">Term Project Link</a>
+                <img width="36" class="gear small" src="assets/images/myimage/sun.svg">
+              </div>   
+
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <a id="student03" class="content-box" target="_blank" href="https://github.com/NTU-CSX-DataScience/R05228007">
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student03">
                   </div>
-                  <h3 class="content-box-title font-serif">王翊芬</h3>
+                  <h3 class="content-box-title">王翊芬</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -128,7 +176,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student01">
                   </div>
-                  <h3 class="content-box-title font-serif">劉倢如</h3>
+                  <h3 class="content-box-title">劉倢如</h3>
                 </a>
 
                 <div class="text-center">
@@ -151,7 +199,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student07">
                   </div>
-                  <h3 class="content-box-title font-serif">邱千芷</h3>
+                  <h3 class="content-box-title">邱千芷</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -180,17 +228,25 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/final.png" height="400" width="1200">
                   </div>
-                  <h3 class="content-box-title font-serif">Final Project</h3>
+                  <h3 class="content-box-title">Final Project</h3>
                 </a>
               </div>
 
+              <!-- Add slide & project buttons -->
+              <div class="col-md-12 col-sm-6 col-xs-12 row-md-12 text-center">
+                <a class="btn btn-danger col-6" id="btn-space-left" target="_blank" 
+                  href="#">Slide Link</a>
+                <a class="btn btn-danger col-6" id="btn-space-right" target="_blank" 
+                  href="#">Term Project Link</a>
+                <img width="36" class="gear small" src="assets/images/myimage/sun.svg">
+              </div>  
 
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <a id="student12" class="content-box" target="_blank" href="https://github.com/NTU-CSX-DataScience/B06305042">
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student12">
                   </div>
-                  <h3 class="content-box-title font-serif">陳彥碩</h3>
+                  <h3 class="content-box-title">陳彥碩</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -210,7 +266,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student14">
                   </div>
-                  <h3 class="content-box-title font-serif">吳嘉峻</h3>
+                  <h3 class="content-box-title">吳嘉峻</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -233,17 +289,25 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/final.png" height="400" width="1200">
                   </div>
-                  <h3 class="content-box-title font-serif">Final Project</h3>
+                  <h3 class="content-box-title">Final Project</h3>
                 </a>
               </div>
  
-              
+              <!-- Add slide & project buttons -->
+              <div class="col-md-12 col-sm-6 col-xs-12 row-md-12 text-center">
+                <a class="btn btn-danger col-6" id="btn-space-left" target="_blank" 
+                  href="#">Slide Link</a>
+                <a class="btn btn-danger col-6" id="btn-space-right" target="_blank" 
+                  href="#">Term Project Link</a>
+                <img width="36" class="gear small" src="assets/images/myimage/sun.svg">
+              </div>  
+
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <a id="student08" class="content-box" target="_blank" href="https://github.com/NTU-CSX-DataScience/B06505017">
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student08">
                   </div>
-                  <h3 class="content-box-title font-serif">謝心默</h3>
+                  <h3 class="content-box-title">謝心默</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -262,7 +326,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student06">
                   </div>
-                  <h3 class="content-box-title font-serif">張皓</h3>
+                  <h3 class="content-box-title">張皓</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -283,7 +347,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student11">
                   </div>
-                  <h3 class="content-box-title font-serif">謝伯徽</h3>
+                  <h3 class="content-box-title">謝伯徽</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -306,17 +370,25 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/final.png" height="400" width="1200">
                   </div>
-                  <h3 class="content-box-title font-serif">Final Project</h3>
+                  <h3 class="content-box-title">Final Project</h3>
                 </a>
               </div>
 
+              <!-- Add slide & project buttons -->
+              <div class="col-md-12 col-sm-6 col-xs-12 row-md-12 text-center">
+                <a class="btn btn-danger col-6" id="btn-space-left" target="_blank" 
+                  href="#">Slide Link</a>
+                <a class="btn btn-danger col-6" id="btn-space-right" target="_blank" 
+                  href="#">Term Project Link</a>
+                <img width="36" class="gear small" src="assets/images/myimage/sun.svg">
+              </div>  
 
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <a id="student05" class="content-box" target="_blank" href="https://github.com/NTU-CSX-DataScience/D06521014">
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student05">
                   </div>
-                  <h3 class="content-box-title font-serif">詹明修</h3>
+                  <h3 class="content-box-title">詹明修</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -338,7 +410,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student02">
                   </div>
-                  <h3 class="content-box-title font-serif">江泓葦</h3>
+                  <h3 class="content-box-title">江泓葦</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -362,7 +434,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student10">
                   </div>
-                  <h3 class="content-box-title font-serif">謝承軒</h3>
+                  <h3 class="content-box-title">謝承軒</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -385,17 +457,25 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/final.png" height="400" width="1200">
                   </div>
-                  <h3 class="content-box-title font-serif">Final Project</h3>
+                  <h3 class="content-box-title">Final Project</h3>
                 </a>
               </div>
 
+              <!-- Add slide & project buttons -->
+              <div class="col-md-12 col-sm-6 col-xs-12 row-md-12 text-center">
+                <a class="btn btn-danger col-6" id="btn-space-left" target="_blank" 
+                  href="#">Slide Link</a>
+                <a class="btn btn-danger col-6" id="btn-space-right" target="_blank" 
+                  href="#">Term Project Link</a>
+                <img width="36" class="gear small" src="assets/images/myimage/sun.svg">
+              </div>  
 
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <a id="student04" class="content-box" target="_blank" href="https://github.com/NTU-CSX-DataScience/B06B02003">
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student04">
                   </div>
-                  <h3 class="content-box-title font-serif">何佳儀</h3>
+                  <h3 class="content-box-title">何佳儀</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -417,7 +497,7 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student13">
                   </div>
-                  <h3 class="content-box-title font-serif">翁嬿婷</h3>
+                  <h3 class="content-box-title">翁嬿婷</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
@@ -438,14 +518,14 @@
                   <div class="content-box-image">
                     <img src="assets/images/myimage/github-logo.jpg" alt="Student09">
                   </div>
-                  <h3 class="content-box-title font-serif">洪浩博</h3>
+                  <h3 class="content-box-title">洪浩博</h3>
                 </a>
                 <div class="text-center">
                   <a class="btn btn-info btn-sm" target="_blank" 
                   href="https://ntu-csx-datascience.github.io/B04611027/index.html">HW 1</a>
                   <a class="btn btn-info btn-sm" target="_blank" 
                   href="https://ntu-csx-datascience.github.io/B04611027/r105.html">HW 2</a>
-                  <a class="btn btn-info btn-sm" target="_blank" href="https://ntu-csx-datascience.github.io/B04611027/hw3.html">HW 3</a>
+                  <a class="btn btn-info btn="_blank" href="https://ntu-csx-datascience.github.io/B04611027/hw3.html">HW 3</a>
                   <a class="btn btn-info btn-sm" target="_blank" href="https://ntu-csx-datascience.github.io/B04611027/hw4.html">HW 4</a>
                   <a class="btn btn-info btn-sm" target="_blank" href="https://ntu-csx-datascience.github.io/B04611027/hw5.html">HW 5</a>
                 </div>                
@@ -489,4 +569,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+
+  <!-- For js animate -->
+
 </html>
